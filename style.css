@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    margin: 30px;
+    font-size: 24px;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.back {
+    width: 1440px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 40px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+}
+.left {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 40px;
+}
+.right {
+    width: 50%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 40px;
+}
+.icon {
+    position: relative;
+    left: -41%;
+}
+input {
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+}
+button {
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+    font-weight: 700;
+    width: 29%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+}
+button:active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+    width: 29%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+}
