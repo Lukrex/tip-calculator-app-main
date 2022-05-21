@@ -10,33 +10,44 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-  <div class="back">
-    <div class="left">
-      <p class="text-left">Bill</p>
-      <input placeholder="0"><img class="icon" src="images/icon-dollar.svg">
-      <p class="text-left">Select Tip %</p>
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
-      <input placeholder="Custom" class="custom">
-      <p class="text-left">Number of People</p>
-      <input placeholder="0"><img class="icon" src="images/icon-person.svg">
+  <header>
+    <h1>SPLITTER</h1>
+  </header>
+  <main>
+    <div class="back-border">
+      <div class="back">
+        <div class="left">
+          <p class="text-bill">Bill</p>
+          <input id="input1" placeholder="0" pattern="[0-9]+">
+          <label for="input1"><img class="icon" src="images/icon-dollar.svg"></label>
+          <p class="text-tip">Select Tip %</p>
+          <div class="leftBtnContainer">
+            <button id="1" class="leftBtn" onclick="btnClick(this.id)">5%</button>
+            <button id="2" class="leftBtn" onclick="btnClick(this.id)">10%</button>
+            <button id="3" class="leftBtn" onclick="btnClick(this.id)">15%</button>
+            <button id="4" class="leftBtn" onclick="btnClick(this.id)">25%</button>
+            <button id="5" class="leftBtn" onclick="btnClick(this.id)">50%</button>
+            <input placeholder="Custom" class="custom" pattern="[0-9]+">
+          </div>
+          <p class="text-people">Number of People</p>
+          <input id="input2" placeholder="0" pattern="[0-9]+">
+          <label for="input2"><img class="icon" src="images/icon-person.svg"></label>
+        </div>
+        <div class="right">
+          <p class="t">Tip Amount</p>
+          <p class="pp">/ person</p>
+          <p class="t">Total</p>
+          <p class="pp">/ person</p>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
     </div>
-    <div class="right">
-      Tip Amount
-      / person
+  </main>
 
-      Total
-      / person
-
-      Reset
-    </div>
-  </div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Lukáš Majchrák</a>.
-  </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
