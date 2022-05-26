@@ -18,8 +18,8 @@
       <div class="back">
         <div class="left">
           <p class="text-bill">Bill</p>
-          <input id="input1" placeholder="0" pattern="[0-9]+">
-          <label for="input1"><img class="icon" src="images/icon-dollar.svg"></label>
+          <input id="input1" placeholder="0" pattern="[0-9]+" maxlength="30" title="Numbers only">
+          <label for="input1"><img class="icon" src="images/icon-dollar.svg" alt=""></label>
           <p class="text-tip">Select Tip %</p>
           <div class="leftBtnContainer">
             <button id="1" class="leftBtn" onclick="btnClick(this.id)">5%</button>
@@ -27,18 +27,20 @@
             <button id="3" class="leftBtn" onclick="btnClick(this.id)">15%</button>
             <button id="4" class="leftBtn" onclick="btnClick(this.id)">25%</button>
             <button id="5" class="leftBtn" onclick="btnClick(this.id)">50%</button>
-            <input placeholder="Custom" class="custom" pattern="[0-9]+">
+            <input placeholder="Custom" class="custom" pattern="[0-9]+" maxlength="2" title="Numbers only">
           </div>
           <p class="text-people">Number of People</p>
-          <input id="input2" placeholder="0" pattern="[0-9]+">
-          <label for="input2"><img class="icon" src="images/icon-person.svg"></label>
+          <input id="input2" placeholder="0" pattern="[0-9]+" maxlength="30" title="Numbers only">
+          <label for="input2"><img class="icon" src="images/icon-person.svg" alt=""></label>
         </div>
         <div class="right">
           <p class="t">Tip Amount</p>
           <p class="pp">/ person</p>
+          <p id="tipAmount"></p>
           <p class="t">Total</p>
           <p class="pp">/ person</p>
-          <button class="reset">RESET</button>
+          <p id="total"></p>
+          <button class="reset" onclick="reset()">RESET</button>
         </div>
       </div>
     </div>
