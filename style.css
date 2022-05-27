@@ -15,7 +15,7 @@
 body {
     font-family: 'Space Mono', monospace;
     margin: 1.9em;
-    font-size: 10px;
+    font-size: 15px;
     overflow: hidden;
     height: 100%;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -59,16 +59,16 @@ h1:hover {
     padding: 1.5em;
 }
 .left {
-    width: 50%;
+    width: 20em;
     background-color: #fff;
     border-radius: 1em;
-    padding: 1em 5% 1em 1em;
+    padding: 1em 2em 1em 1em;
 }
 .right {
-    width: 50%;
+    width: 20em;
     background-color: hsl(183, 100%, 15%);
     border-radius: 0.8em;
-    padding: 5%;
+    padding: 2em;
     position: relative;
 }
 .text-bill, .text-tip, .text-people {
@@ -126,17 +126,22 @@ button, .custom {
 .leftBtn {
     background-color: hsl(183, 100%, 15%);
     color: #fff;
-    width: 5.7em;
-    height: 2.6em;
-    transition: background-color 0.1s, color 0.15s;
+    font-size: 0.979em;
+    width: 4.9em;
+    height: 2.4em;
+    transition: background-color 0.1s, color 0.1s;
+}
+button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 button:active {
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(174, 62%, 76%);
     color: hsl(183, 100%, 15%);
 }
 .custom {
     background-color: hsl(189, 41%, 97%);
-    width: 4.35em;
+    width: 4.12em;
     height: 1.76em;
     text-align: center;
     font-size: 1em;
@@ -155,12 +160,15 @@ button:active {
 }
 #tipAmount, #total {
     position: absolute;
-    left: 15em;
-    top: 1.5em;
-    color: hsl(184, 14%, 56%);
+    left: 7em;
+    top: 0.15em;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    font-size: 1.7em;
+    cursor: default;
 }
 #total {
-    top: 6.5em;
+    top: 3.1em;
 }
 .reset {
     color: hsl(183, 100%, 15%);
@@ -169,10 +177,14 @@ button:active {
     bottom: -3em;
     position: relative;
     height: 3em;
-    transition: transform 0.8s -0.1s;
+    transition: transform 0.8s -0.1s, background-color 0.1s;
 }
 .reset:hover {
     transform: scale(1.1);
+}
+.reset:active {
+    background-color: hsl(174, 62%, 76%);
+    color: hsl(183, 100%, 15%);
 }
 
 @keyframes gradient {
@@ -181,8 +193,28 @@ button:active {
 	100% {background-position: 0% 50%;}
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
     body {
-        font-size: 15px;
+        font-size: 10px;
+    }
+    .back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 19em;
+        height: 40em;
+    }
+    .back-border {
+        width: 22.8em;
+        height: 43.8em;
+    }
+    .left {
+        padding: 1em;
+    }
+    .right {
+        width: 15em;
+    }
+    .reset {
+        bottom: 0;
     }
 }
