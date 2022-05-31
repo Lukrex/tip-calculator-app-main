@@ -195,21 +195,21 @@ button:active {
 
 @media screen and (max-width: 550px) {
     body {
-        font-size: 10px;
+        font-size: 11px;
     }
     .back {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 19em;
-        height: 40em;
+        height: 38em;
     }
     .back-border {
         width: 22.8em;
-        height: 43.8em;
+        height: 41.8em;
     }
     .left {
-        padding: 1em;
+        width: 16em;
     }
     .right {
         width: 15em;
