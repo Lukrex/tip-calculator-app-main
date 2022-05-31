@@ -33,7 +33,8 @@ function people(e) {
     calculate();
 }
 function calculate() {
-    if (btnV === undefined || billV === NaN || peopleV === NaN || billV === undefined || peopleV === undefined || billV === "" || peopleV === "") {
+    if (btnV === undefined || billV === NaN || peopleV === NaN || billV === undefined || 
+        peopleV === undefined || billV === "" || peopleV === "" || billV === "." || peopleV === ".") {
         return;
     } else {
         console.log(btnV + ", " + billV + ", " + peopleV);
