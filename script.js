@@ -76,5 +76,6 @@ function reset() {
     tip_amount.style.left = '7em';
     the_total.style.left = '7em';
     custom.value = '';
+    custom.placeholder = 'Custom';
     btnV = undefined;
 }
