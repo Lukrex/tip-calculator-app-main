@@ -17,9 +17,11 @@ function toDecimal(percent) {
 function btnClick(id) {
     var btn = document.getElementById(id);
     if (btn.tagName === "BUTTON") {
+        custom.placeholder = btn.innerHTML;
         custom.value = "";
         btnV = toDecimal(btn.innerHTML);
     } else if (btn.tagName === "INPUT") {
+        custom.placeholder = "0%";
         btnV = btn.value / 100;
     } else { return; }
     calculate();
@@ -45,6 +47,10 @@ function calculate() {
 function tipAmount(btn, b, p) {
     let result = (b * btn) / p;
     tip_amount.innerHTML = "$" + result.toFixed(2);
+}
+function total(btn, b, p) {
+    let result = (b * (btn + 1)) / p;
+    the_total.innerHTML = "$" + result.toFixed(2);
     if (result.toFixed(2).length > 8) {
         tip_amount.style.left = '5em';
         the_total.style.left = '5em';
@@ -61,10 +67,6 @@ function tipAmount(btn, b, p) {
         tip_amount.style.left = '7em';
         the_total.style.left = '7em';
     }
-}
-function total(btn, b, p) {
-    let result = (b * (btn + 1)) / p;
-    the_total.innerHTML = "$" + result.toFixed(2);
 }
 function reset() {
     input1.value = '';
