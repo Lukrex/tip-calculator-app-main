@@ -18,7 +18,7 @@
       <div class="back">
         <div class="left">
           <p class="text-bill">Bill</p>
-          <input id="input1" placeholder="0" pattern="^[0-9]*\.?[0-9]*$" maxlength="9" title="Numbers only">
+          <input id="input1" placeholder="0" pattern="^[0-9]*\.?[0-9]*$" maxlength="9" aria-label="Bill Price" title="Numbers only">
           <label for="input1"><img class="icon" src="images/icon-dollar.svg" alt=""></label>
           <p class="text-tip">Select Tip %</p>
           <div class="leftBtnContainer">
@@ -27,10 +27,10 @@
             <button id="3" class="leftBtn" onclick="btnClick(this.id)">15%</button>
             <button id="4" class="leftBtn" onclick="btnClick(this.id)">25%</button>
             <button id="5" class="leftBtn" onclick="btnClick(this.id)">50%</button>
-            <input placeholder="Custom" class="custom" id="custom" pattern="[0-9]+" maxlength="2" title="Numbers only">
+            <input placeholder="Custom" class="custom" id="custom" pattern="[0-9]+" maxlength="2" aria-label="Optional Custom Tip Percentage" title="Numbers only">
           </div>
           <p class="text-people">Number of People</p>
-          <input id="input2" placeholder="0" pattern="^[0-9]*\.?[0-9]*$" maxlength="9" title="Numbers only">
+          <input id="input2" placeholder="0" pattern="^[0-9]*\.?[0-9]*$" maxlength="9" aria-label="Number of People" title="Numbers only">
           <label for="input2"><img class="icon" src="images/icon-person.svg" alt=""></label>
         </div>
         <div class="right">
